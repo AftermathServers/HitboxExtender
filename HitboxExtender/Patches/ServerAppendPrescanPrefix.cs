@@ -21,8 +21,8 @@ public class ServerAppendPrescanPrefix
         float maxDistance = __instance.DamageFalloffDistance + __instance.FullDamageDistance;
         float radius = HitboxExtenderPlugin.Instance.Config.HitboxSize;
 
-        Vector3 origin = targetRay.origin + targetRay.direction * 0.1f;
-        Vector3 castEnd = targetRay.origin + targetRay.direction * 1.1f;
+        Vector3 origin = targetRay.origin + targetRay.direction;
+        Vector3 castEnd = targetRay.origin + targetRay.direction * 1.2f;
 
         DrawableLinesUtils.GenerateCapsule(origin, castEnd, radius, Color.magenta, 5f);
 
