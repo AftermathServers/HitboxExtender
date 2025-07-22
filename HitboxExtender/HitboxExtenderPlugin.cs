@@ -33,6 +33,7 @@ public class HitboxExtenderPlugin : Plugin<HitboxExtenderConfig>
         
         Instance = this;
         Harmony = new Harmony($"Aftermath.HitboxExtender.{DateTime.Now}");
+        Harmony.PatchAll();
     }
     
     public override void Disable()
